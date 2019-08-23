@@ -8,5 +8,4 @@ with open('movie_quotes.txt', 'r') as f:
 l = random.choice(lines)
 fields = l.split(' \t')
 
-print(fields[1])
-print(('-- %s ' % fields[2]).rjust(65), end='')
+print('%s\n%s' % (fields[1], ('-- %s ' % fields[2]).rjust(64)))
